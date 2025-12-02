@@ -1,0 +1,14 @@
+{
+  "name": "legend-of-kiro",
+  "version": "1.0.0",
+  "description": "Legend of Kiro dungeon crawler game",
+  "type": "module",
+  "scripts": {
+    "test": "vitest --run"
+  },
+  "devDependencies": {
+    "vitest": "^1.0.0",
+    "fast-check": "^3.15.0",
+    "jsdom": "^23.0.0"
+  }
+}

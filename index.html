@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiro Dash</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #1a1a2e;
+            font-family: 'Courier New', monospace;
+        }
+        #gameContainer {
+            text-align: center;
+        }
+        canvas {
+            border: 4px solid #16213e;
+            background: #0f3460;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+        }
+        #ui {
+            margin-top: 20px;
+            color: #e94560;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .stat {
+            display: inline-block;
+            margin: 0 20px;
+            padding: 10px 20px;
+            background: #16213e;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="ui">
+            <span class="stat">Health: <span id="health">3</span></span>
+            <span class="stat">Items: <span id="items">0</span>/3</span>
+            <span class="stat">Score: <span id="score">0</span></span>
+            <span class="stat">High Score: <span id="highScore">0</span></span>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
